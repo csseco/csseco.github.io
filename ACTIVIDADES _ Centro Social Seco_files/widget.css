@@ -1,0 +1,600 @@
+body {
+	margin: 0; 
+	padding: 1px; 
+	background: transparent;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#container {
+	border-radius: 0px;	
+	background:transparent;
+}
+
+#loading {
+	background: url(../../common/plugins/jquery/ajax-loader.gif) transparent no-repeat;
+	width:16px;
+	height:16px;
+	display: none;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+}
+
+#calendar {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	min-width: 350px;
+}
+.fc-view.fc-timetable-view {
+	background: transparent !important;
+}
+.fc-view.fc-agendaList-view , 
+.fc-view.fc-agendaWeek-view {
+	border-width: 0 1px 1px !important; 
+}
+.fc-button .fc-icon{top:1.12em;}
+.fc-icon-left-single-arrow:after { content: "";font-weight:bold; height: 11px; width: 8px;display: none;}
+.fc-icon-right-single-arrow:after { content: ""; font-weight:bold; height: 11px; width: 8px;display: none;}
+.fc-icon-left-double-arrow:after{content:"\000AB"}
+.fc-icon-right-double-arrow:after{content:"\000BB"}
+
+.fc-icon.fc-icon-left-single-arrow span ,
+.fc-icon.fc-icon-right-single-arrow span {
+	display: block;
+	vertical-align: middle;
+}
+
+.fc-today-button.fc-state-disabled {
+	opacity: 1 !important;
+}
+.fc-header-title h2, 
+.fc-button, 
+.fc-toolbar h2{
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: inline-block;
+}
+.fc-loader {
+	margin: 20px 0 10px 0;
+}
+.fc-button {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+    outline: none;
+}
+.fc-button.fc-state-disabled {
+	cursor: default;
+}
+.fc-button:focus,.fc-button:active, .fc-button:hover{
+	outline: none;
+}
+.fc-state-highlight {
+	box-shadow: none !important;
+}
+.fc-today-button, .fc-state-default, .fc-header-timezone {
+	text-transform: capitalize;
+}
+.fc-hiddenDay {
+	background: transparent !important;
+}
+.fc-toolbar {
+	vertical-align: middle;
+	height: 36px;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	white-space: nowrap;
+	margin: 0;
+}
+.fc-toolbar span.fc-icon ,
+.fc-toolbar span.fc-icon span, 
+.fc-toolbar h2{
+	height:100%;
+	line-height: 36px !important;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.fc-toolbar span.fc-icon ,
+.fc-toolbar span.fc-icon span {
+	vertical-align: top;
+}
+.fc-header-timezone{
+	margin-right: 10px;
+	display: block !important;
+}
+.fc .fc-toolbar > * > * {
+	float: none;
+}
+.fc-toolbar .fc-center{
+	width: 50%;
+}
+.fc-toolbar .fc-left , .fc-toolbar .fc-right{
+	width:25%;
+	float: none;
+	display: inline-block;
+}
+.fc-toolbar .fc-left {
+	text-align: left;
+}
+.fc-toolbar .fc-center {
+	text-align: center;
+}
+.fc-toolbar .fc-right {
+	text-align: right;
+}
+.fc-more-cell{
+	text-align: right;
+}
+.fc-more-cell > div a.fc-more , div.badge a.fc-more{
+	color:white;
+	border-radius: 10px; /* must be 1/2 of ( border-width*2 + width ) */
+	text-decoration: none;
+	border: 0;
+	height: 14px; /* height + padding-top must equal width */
+	line-height: 14px !important;
+	padding:0;
+	text-align: center;
+	min-width: 20px;
+    margin-right: 2px;
+    box-shadow: none;
+    text-shadow: none;    
+    display: inline-block;
+    vertical-align: top;
+}
+.fc-more-cell > div a.fc-more.badgeWithoutPlus, .fc-more-cell  > div.badge a.fc-more.badgeWithoutPlus{
+	height: 14px;
+	min-width: 14px;
+}
+.fc-view.fc-month-view .fc-more-cell div {
+	height: 17px !important;
+	overflow: hidden;
+}
+.fc-basic-view td.fc-day-number, .fc-basic-view td.fc-week-number span {
+	padding-top:0;
+	padding-bottom: 0; 
+}
+.fc-view.fc-month-view .fc-day-number{ 
+	text-align: left;
+}
+.fc-view.fc-month-view .fc-head .fc-head-container.fc-widget-header{
+	border-width:0 1px 0 1px;
+}
+.fc-view.fc-month-view .fc-head .fc-row.fc-widget-header{
+	height: 51px;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 51px;
+	border: 0
+}
+.fc-view.fc-month-view1 .fc-head .fc-row.fc-widget-header table th,
+.fc-view.fc-month-view1 .fc-head .fc-row.fc-widget-header table td{
+	border: 0;
+}
+.fc-view.fc-month-view1 .fc-widget-content:first-child,
+.fc-view.fc-agendaWeek-view .fc-widget-content:first-child {
+	border-right-width: 0 !important;
+	border-left-width: 0 !important;
+	border-bottom-width: 0 !important;
+}
+.webui-popover {
+	border-radius:0; 
+}
+.webui-popover .webui-popover-content {
+	overflow: hidden;
+}
+.fc-time-full {
+	display: none;
+}
+.fc-content {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+}
+
+.fc-view.fc-agendaWeek-view .fc-event .fc-content {
+	width: 95%;
+	padding-left: 2px;
+}
+
+.webui-popover-content ul.fc-event-list {
+	list-style-type: none;
+	padding: 5px 0 0 ;
+	margin:0;
+	-webkit-padding-start: 0px;
+}
+.webui-popover-content .fc-event-list li {
+	height: 44px;
+	padding: 8px 8px 8px 15px;
+	cursor: pointer;
+}
+.webui-popover-content .fc-event-list li:last-child{
+	border: 0;
+}
+.webui-popover-content .fc-time {
+	display: none;
+} 
+.webui-popover-content .fc-time-full {
+	display: block;
+} 
+.fc-reg-event {
+	background: transparent !important;
+	border:0;
+}
+.webui-popover-content .fc-time-full .svg-time{
+	height: 13px;
+    margin-right: 1px;
+    margin-top: -2px;
+    vertical-align: middle;
+    width: 13px;
+} 
+.webui-popover-content .fc-title{
+    width: 85%;
+    display: block;
+    padding-left: 0 !important;
+	word-wrap: break-word;
+}
+
+.webui-popover-content .fc-event-list .fc-title{
+	height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+	padding-left: 19px !important;
+}
+.webui-popover{
+	padding: 0;
+	box-shadow: none;
+	border: 0;
+}
+.webui-popover .popover-text {
+	height: 100%;
+} 
+ul.event-data {
+	list-style: none;
+	padding: 0;
+	width: 230px;
+}
+ul.event-data li {	
+	display: block;
+	margin-bottom:10px;
+	padding-left:15px;
+}
+
+ul.event-data li span{
+	display: block;
+}
+.copy-event {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	height: 40px;
+	width:100%;
+}
+.copy-event span {
+	display: inline-block;
+	width: 90%;
+	vertical-align: middle;
+	height:100%;
+	line-height: 40px;
+    margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.fc-view.fc-month-view .fc-event {
+	border:0;
+	border-radius:0;
+	outline: none;
+	padding-left: 8px;
+	margin: 0 0 1px 0 ;
+	height: 15px; 
+}
+.webui-popover-content .fc-description {
+	width: 90%;
+	overflow: hidden;
+	word-break: break-word;
+}
+.webui-popover-content .popover-btnBack {
+	width: 90%;
+	padding:8px 15px 0 15px;
+	font-size: 14px !important;
+    line-height: 18px !important;
+    cursor: pointer;
+} 
+a.fc-more, a.fc-more:hover, a.fc-more:focus {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 530px) {
+	.lblTimezone {display: none !important; }
+}
+.month-date{
+	max-height: 50px;
+	overflow: hidden;
+}
+.fc-other-month .fc-day-number {
+	opacity:.3;
+	filter:alpha(opacity=30);
+}
+
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-time-grid .fc-slats td {
+ 	height:70px;
+ 	text-align: center;
+}
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-day-header.fc-widget-header {
+	padding-top:2px;
+	max-height:110px;
+	overflow: hidden;
+}
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-day-header.fc-widget-header span{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-day-header.fc-widget-header span:nth-child(2){
+	margin-bottom: 10px;	
+}
+
+.fc-day-grid-event .fc-time {
+	font-weight: 400 !important;
+}
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-day-header.fc-widget-header , 
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-axis.fc-widget-header ,
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-row.fc-widget-header,
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-head-container.fc-widget-header{
+	border:0;
+}
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-row.fc-week.fc-widget-content{
+	border-right: 0;
+	margin-right: 0 !important;
+}
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-time-grid-event .fc-time, 
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-time-grid-event .fc-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.fc-view.fc-agendaWeek-view.fc-agenda-view hr.fc-divider {
+	border-width: 0 0 1px 0;
+	padding: 0;
+}
+
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-more-cell > div a.fc-more , 
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-more-cell > div.badge a.fc-more {
+	vertical-align: top;
+	margin-top: 3px;
+} 
+.fc-view.fc-agendaWeek-view.fc-agenda-view .fc-event {
+	border:0;
+	border-radius:0;
+	margin-left: 1px;
+	margin-right: 0px;
+}
+
+.fc-view.fc-agendaList-view .fc-agendaList {
+	margin: 0;
+}
+
+.table {
+	width: 96%;
+	margin: 16px auto;
+	padding:0;
+	display: table;
+	table-layout: fixed;
+}
+.table-row  {
+    display: table-row;
+}
+.table-cell {
+	display: table-cell;
+}
+.table-cell-left {
+	width:90px;
+	padding:1em;
+	border:0;
+	vertical-align:middle;
+	display: table-cell;
+}
+.table-cell-middle {
+	padding: 0;
+	width:20px;
+	border:0;
+	display: table-cell;
+}
+.table-cell-right {
+	padding:0 1em 0 8px;
+	vertical-align: top;
+	border:0;
+	display: table-cell;
+}
+.row-separator {
+	width: 100%;
+	height: 16px;
+}
+.fc-view.fc-agendaList-view .fc-agendaList .fc-curDate span{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul{
+	border:0;
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul.list-group {
+	margin-top: 5px;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul label {
+	padding-left:0px;
+	border-radius: 0;
+	cursor: pointer;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul label .svg-time {
+	display: none; 
+} 
+
+.fc-view.fc-agendaList-view .fc-agendaList ul label span{
+	display: inline-block;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul label span:first-child{
+	margin-right: 5px;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul li { 
+	margin: 0;
+	padding: 0px;
+	border: 0;
+	border-radius: 0;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul input[type=checkbox] { display: none; }
+.fc-view.fc-agendaList-view .fc-agendaList ul input[type=checkbox] ~ ul { 
+	max-height: 0;
+	max-width: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul input[type=checkbox]:checked ~ ul { 
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul input[type=checkbox]:checked + label .svg-time {
+	display: inline-block;
+}
+.fc-view.fc-agendaList-view .fc-agendaList ul.eventData {
+	padding-left: 40px;
+}
+.fc-view.fc-agendaList-view .fc-agendaList .fc-event-time .svg-time {
+    height: 13px;
+    margin-top: -2px;
+    vertical-align: middle;
+    width: 13px;
+}
+.agenda-copy-event { }
+.agenda-copy-event span{
+	cursor: pointer;
+	text-decoration: underline;
+	margin-bottom: 10px;
+	display: block;
+}
+.fc-empty-events {
+	display: block;
+	height: 200px;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 110px;
+}
+.fc button {
+	height: 2.0em;
+}
+.ps-container.ps-active-x > .ps-scrollbar-x-rail, 
+.ps-container.ps-active-y > .ps-scrollbar-y-rail ,
+.ps-container.ps-active-x > .ps-scrollbar-x-rail:hover, 
+.ps-container.ps-active-y > .ps-scrollbar-y-rail:hover {
+	opacity:1;
+	border-radius: 0;	 
+} 
+.ps-scrollbar-y-rail {
+	margin: 2px 0;
+	z-index: 99;
+}
+.fc-view.fc-timetable-view .table {
+	width:100% !important;
+	padding: 0;
+	margin: 0 !important;	
+}
+.fc-view.fc-timetable-view .table.fc-header {
+	padding: 0 ;
+	text-align: center;
+}
+.fc-view.fc-timetable-view .table .fc-widget-header span {
+	display: block;
+}
+.fc-view.fc-timetable-view .table .fc-widget-header span:nth-child(1) {
+	
+} 
+.fc-view.fc-timetable-view .table .fc-widget-header span:nth-child(2){
+	height: 16px;
+	margin-bottom: 10px
+}
+.fc-view.fc-timetable-view .fc-event {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.fc-view.fc-timetable-view .svg-time {
+	display: none;
+}
+.fc-view.fc-timetable-view .fc-event-time,
+.fc-view.fc-timetable-view .fc-event-title,
+.fc-view.fc-timetable-view .fc-event-description {
+	margin:0;
+	padding:0;
+	display: block;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+    width: 100%;
+}
+.fc-view.fc-timetable-view .fc-event-time{
+	height: auto;
+	max-height: 40px;
+}
+
+.fc-timetable-scroll {
+	display: block;
+	position: relative;
+}
+
+.fc-view.fc-timetable-view .fc-body .table-row .table-cell:last-child {
+	border-right-width: 1px !important;
+}
+
+.fc-view.fc-timetable-view .fc-body .table-row:last-child  .table-cell {
+	border-bottom-width: 1px !important;
+}
+.fc-view.fc-month-view th.fc-day-header {
+	border: 0;
+}
+.fc-day-name {
+	content: '' !important;
+}
+.fc-day-name:after {
+	content : attr(data-longname);
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width:99%;
+}
+.fc-view.fc-month-view .fc-day-name:after {
+	line-height: 50px;
+}
+	
+@media screen and (max-width: 630px) {
+	.fc-day-name:after {
+		content : attr(data-shortname);
+	}
+}
+.hidden{
+	display: none !important;
+}
+.fc-today-button.fc-state-disabled.opacity0 {
+	opacity:0 !important;
+}
+.fc-allDayText {
+	text-align: center;
+}
+.webui-popover-content .event-start-time {
+	display: none;
+}
